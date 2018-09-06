@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>La Devinette</title>
+</head>
+<body>
+    <center>
+
+        <!-- Titre -->
+        <h1>"La Devinette"</h1>
+
+        <!-- devinez le chiffre choisi entre 0 et 100 -->
+        <p>Devinez le chiffre choisi entre 0 et 100</p>
+        <p>Attention il vous reste <span id="essai" style="color: red;">6</span> essais</p>
+        
+        <!-- fomulaire -->
+        <form action="" method="post">
+            <input type="text" name="chiffre" id="id_chiffre">
+            <input type="button" value="Valider" onclick="aleatoire()">
+            <input type="submit" id="reessayer" value="" onclick="aleatoire()" style="visibility: hidden;">
+        </form>
+
+        <!-- champs résultat -->
+        <div style="padding: 60px;">
+            <span id="resultat"></span>
+        </div>
+
+
+    </center>
+
+    <script src="script.js"></script>
+</body>
+</html>
